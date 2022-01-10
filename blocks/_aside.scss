@@ -1,0 +1,15 @@
+aside{
+    display: flex;
+    width: 20%;
+    padding: 0 120px;
+    justify-content: center;
+    align-items: flex-start;
+    @include desktop{
+        flex-direction: column;
+    }
+    img{
+        @include desktop{
+            margin: 50px 0;
+        }
+    }
+}

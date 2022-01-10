@@ -1,0 +1,12 @@
+.terms-of-use{
+    @include desktop {
+        padding: 40px 0;
+      }
+    p{
+        a{
+            text-decoration: underline;
+            font-weight: 100;
+        }
+    }
+    
+}

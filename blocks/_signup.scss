@@ -1,0 +1,41 @@
+.form-section__form{
+    .form-section__form__signup{
+        display: flex;
+        height: 55px;
+        padding: 30px 0;
+        gap: 15px;
+        @include desktop {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        .form-section__form--btn{
+            width: 200px;
+            border: 1px solid $lightGray;
+            background-color: white;
+            border-radius: $borderRadius;
+        }
+        label{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        input[type="checkbox"]{
+            width: 25px;
+            height: 25px;
+            margin: 0 8px;
+        }
+        p{
+            font-weight: 100;
+            padding: 0;
+        }
+        button{
+            @include desktop {
+                padding:20px;
+                margin: 30px 0;
+            }
+            cursor: pointer;
+        }
+
+    }
+}

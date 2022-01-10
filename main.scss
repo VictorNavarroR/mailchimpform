@@ -1,0 +1,46 @@
+@import "./utilities/variables";
+@import "./utilities/fonts";
+@import "./blocks/responsive";
+
+@import "./blocks/lists";
+@import "./blocks/form";
+@import "./blocks/aside";
+@import "./blocks/signup";
+@import "./blocks/term-ofuse";
+
+
+/*resets*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: rgb(57, 57, 57);
+}
+main{
+    display: flex;
+    padding-top: 10%;
+    max-width: 70%;
+    height: auto;
+
+    @include desktop {
+        flex-direction: column;
+      }
+}
+a{
+    color: $accentColor;
+    text-decoration: none;
+    font-weight: 600;
+    &:hover{
+        text-decoration: underline;
+    }
+
+}
+
+
+
+

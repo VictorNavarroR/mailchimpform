@@ -1,0 +1,32 @@
+.form-section__form__lists{
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0 30px 15px;
+    @include desktop {
+        flex-direction: column;
+      }
+    .form-section__form--list2{
+        margin-left: 180px;
+        @include custom {
+            margin-left: 50px;
+          }
+        @include desktop {
+        margin-left: 0;
+        }
+    }
+    ul{
+        list-style-type: none;
+        li{
+            position: relative;
+            padding: 6px 0;
+        }
+        li::before {
+            content: "•"; 
+            position: absolute;
+            top:-8px;
+            left: -20px;
+            color: $accentColor;
+            font-size: 2.5rem;
+        }
+    }
+}

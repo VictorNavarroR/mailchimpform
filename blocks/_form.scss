@@ -1,0 +1,40 @@
+.form-section{
+    h2{
+        font-family: Georgia, serif;
+        font-size: 3.2rem;
+
+        @include desktop {
+            margin-left: 0;
+            font-size: 2.8rem;
+        }
+    }
+    p{
+        padding: 30px 0;
+    }
+    .form-section__form{
+        display: flex;
+        flex-direction: column;
+        label{
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        input{
+            padding: 18px 15px;
+            border:1px solid rgb(215, 215, 215);
+            border-radius: $borderRadius;
+            margin: 15px 0;
+            &:focus{
+                border: 1px solid $accentColor;
+            }
+        }
+        .form-section__pass--labelpass{
+            position: relative;
+            span{
+                position: absolute;
+                right: 0;
+                color: $accentColor;
+                cursor: pointer;
+            }
+        }
+    }
+}

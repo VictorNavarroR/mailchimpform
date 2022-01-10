@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mailchimp Form</title>
+</head>
+<body>
+    <main class="main">
+        <aside>
+            <img src="./img/logo-chimp.JPG" alt="Logo Mailchimp">
+        </aside>
+        <section class="form-section">
+            <h2>Welcome to Mailchimp</h2>
+            <p>Find your people. Engage your customers. Build your brand. Doit all
+                with Mailchimp's Marketing Platform, Already have an account? <a href="#">Log in</a>
+            </p>
+            <form class="form-section__form">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required email>
+
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+
+                <label for="password" class="form-section__pass--labelpass">Password<span><i class="far fa-eye"></i> Show</span></label>
+                <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@#&!]).{8,20}$" class="form-section__pass" required> 
+
+                <div class="form-section__form__lists">
+                    <ul class="form-section__form--list1">
+                        <li>One lowercase character</li>
+                        <li>One uppercase character</li>
+                        <li>One number</li>
+                    </ul>
+                    <ul class="form-section__form--list2">
+                        <li>One special character</li>
+                        <li>8 characters minimum</li>
+                    </ul>
+                </div>
+                <div class="form-section__form__signup">
+                    <button class="form-section__form--btn" type="submit" disabled>Sign Up</button>
+                    <label>
+                    <input type="checkbox" name="not-recieve-mail" id="not-recieve-mail">
+                       <p> I don't want to recieve emails about new
+                        Mailchimp products, best practicess, or sspecial
+                        offers.
+                        <p>
+                    </label>
+                </div>
+
+            </form>
+            <div class="terms-of-use">
+                <p>By clicking the "Sign Up" button, you are creating a Mailchimp account, and you 
+                    agree to Mailchimp's <a href="#">Terms of Use</a>and <a href="#">Privacy Policy</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
